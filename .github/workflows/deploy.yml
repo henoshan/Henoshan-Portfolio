@@ -25,7 +25,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Use your PAT if cross-repo
+          personal_token: ${{ secrets.GH_PAT }}  # Use your PAT if cross-repo
           publish_dir: ./dist
           external_repository: henoshan/henoshan.github.io
           publish_branch: main
