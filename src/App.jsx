@@ -1,28 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home';
+import Education from './pages/Education';
+import Experience from './pages/Experience';
+import Projects from './pages/Projects';
+import './App.css';
 
 function App() {
   return (
-    <div className="container">
-      <h1>Hi, I'm Henoshan 👋</h1>
-      <h2>AI/ML Engineer | Final Year Engineering Student</h2>
+    <Router>
+      <div className="navbar">
+        <Link to="/">Home</Link>
+        <Link to="/education">Education</Link>
+        <Link to="/experience">Experience</Link>
+        <Link to="/projects">Projects</Link>
+      </div>
 
-      <p>
-        I'm passionate about building intelligent systems, human-robot interaction, and creating innovative AI solutions.
-      </p>
-
-      <h3>📂 Projects</h3>
-      <ul>
-        <li><a href="https://github.com/henoshan/Maze_Robot_Challenge" target="_blank">Maze Solver Robot</a> - Autonomous robot challenge</li>
-      </ul>
-
-      <h3>📫 Contact</h3>
-      <p>Email: henoshan.official@gmail.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/henoshan-athimoolanathan/" target="_blank">linkedin.com/in/henoshan-athimoolanathan</a></p>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default App
+export default App;
