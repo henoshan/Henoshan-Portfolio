@@ -1,30 +1,85 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a;
+  color: white;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #3b82f6; /* blue border */
+  border-radius: 0 0 12px 12px; /* rounded bottom corners */
+  backdrop-filter: blur(10px); /* blur effect */
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-height: 60px; /* limit height for better responsiveness */
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0.5rem 1rem;
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+  margin: 0 0.5rem;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #3b82f6, #1e40af); /* blue gradient */
+  border-radius: 8px;
+  box-shadow: 0 5px 0 #1e3a8a;
+  transition: all 0.2s ease;
+  display: block;
+  font-size: 1.2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+nav a:hover {
+  transform: translateY(2px);
+  box-shadow: 0 3px 0 #1e3a8a;
+  background: linear-gradient(to bottom, #60a5fa, #1d4ed8);
 }
 
 .container {
   padding: 2rem;
-}
-
-.navbar {
-  background-color: #24292e;
-  padding: 1rem;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.navbar a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.navbar a:hover {
-  color: #61dafb;
-  transform: scale(1.1);
+  text-align: center;
+  background-color: #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  width: 100%;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
 }

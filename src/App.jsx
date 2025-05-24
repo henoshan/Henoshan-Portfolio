@@ -1,18 +1,18 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
-import Education from './pages/Education';
-import Experience from './pages/Experience';
-import Projects from './pages/Projects';
+import Home from './Pages/Home';
+import Education from './Pages/Education';
+import Experience from './Pages/Experience';
+import Projects from './Pages/Projects';
 import './App.css';
 
 function App() {
   return (
     <Router>
-      <div className="navbar">
-        <Link to="/">Home</Link>
-        <Link to="/education">Education</Link>
-        <Link to="/experience">Experience</Link>
-        <Link to="/projects">Projects</Link>
+      <div className="nav">
+        <Link to="/"> 🏠 Home </Link>
+        <Link to="/education"> 🎓 Education </Link>
+        <Link to="/experience"> 💼 Experience </Link>
+        <Link to="/projects"> 📂 Projects </Link>
       </div>
 
       <Routes>
