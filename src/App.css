@@ -83,3 +83,104 @@ nav a:hover {
   position: relative;
   overflow: hidden;
 }
+
+/* Add this to src/App.css or a new Education.css file */
+.education-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1d4ed8;
+}
+
+.edu-card {
+  background: #1e293b; /* dark blue-gray */
+  border: 3px solid #334155;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.edu-card:hover {
+  transform: translateY(-4px);
+}
+
+.edu-logo {
+  width: 170px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  object-fit: cover;
+  border: 2px solid #3b82f6; /* blue border */
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  padding: 0.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.edu-content {
+  text-align: left;
+}
+
+.edu-period {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin: 0.25rem 0;
+  font-style: italic;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  color: #f8fafc; /* light color for better contrast */
+  width: fit-content;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  border: 1px solid #3b82f6; /* blue border */
+  background-clip: padding-box;
+  backdrop-filter: blur(5px); /* blur effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.edu-stream,
+.edu-result,
+.edu-school {
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
+  color: #e0f2fe;
+}
+
+.edu-card.secondary {
+  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  border: 2px solid #334155;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+}
+
+.edu-card.secondary:hover {
+  transform: scale(1.02);
+}
